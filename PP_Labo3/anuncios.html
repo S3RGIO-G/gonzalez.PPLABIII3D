@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./css/formulario.css">
+  <link rel="stylesheet" href="./css/estilosTabla.css">
+  <script src="https://kit.fontawesome.com/f88eed76ad.js" crossorigin="anonymous"></script>
+  <title>ANUNCIOS</title>
+</head>
+
+<body>
+  <header>
+    <a href="#">
+      <img src="https://www.freepnglogos.com/uploads/cleveland-auto-show-car-logo-png-25.png" alt="Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Nosotros</a></li>
+        <li><a href="#">Anuncios</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="divTitulo">
+      <h1>Administracion</h1>
+      <figure>
+        <img src="https://fondosmil.com/fondo/21960.jpg" alt="Autos">
+        <figcaption></figcaption>
+      </figure>
+    </div>
+    <section id="section__container">
+      <fieldset id="container__form">
+        <legend>Informacion del Anuncio</legend>
+        <form id="form">
+          <!-- #region TITULO -->
+          <div class="form__group">
+            <label for="txtTitulo" class="form__label">TITULO:</label>
+            <div class="form__group-input">
+              <input class="form__input" type="text" name="titulo" id="txtTitulo" placeholder="Titulo">
+              <i class="form__validation-icon fas fa-times-circle"></i>
+            </div>
+            <p class="form__input-error">Se debe ingresar un titulo valido. Solo letras, numeros y espacios (6 - 30)</p>
+          </div>
+          <!-- #endregion -->
+
+          <!-- #region TRANSACCION -->
+          <div id="form__group-radios-container">
+            <label class="form__label">TRANSACCION:</label>
+            <div class="form__group-radios">
+              <div class="form__group-radios-div">
+                <label id="lblVenta" for="venta">VENTA</label>
+                <input type="radio" name="transaccion" value="venta">
+                <i class="form__validation-icon-radio  fas fa-times-circle"></i>
+              </div>
+              <div class="form__group-radios-div">
+                <label id="lblAlquiler" for="alquiler">ALQUILER</label>
+                <input type="radio" name="transaccion" value="alquiler">
+                <i class="form__validation-icon-radio fas fa-times-circle"></i>
+              </div>
+            </div>
+          </div>
+          <!-- #endregion -->
+
+          <!-- #region DESCRIPCION -->
+          <div class="form__group">
+            <label for="txtDescripcion" class="form__label">DESCRIPCION:</label>
+            <div class="form__group-input">
+              <input class="form__input" type="text" name="descripcion" id="txtDescripcion" placeholder="Descripcion">
+              <i class="form__validation-icon fas fa-times-circle"></i>
+            </div>
+            <p class="form__input-error">Se debe ingresar una descripcion valida. Solo letras, numeros y espacios (6 - 50)</p>
+          </div>
+          <!-- #endregion -->
+
+          <!-- #region PRECIO -->
+          <div class="form__group">
+            <label for="txtPrecio" class="form__label">PRECIO:</label>
+            <div class="form__group-input">
+              <input class="form__input" type="text" name="precio" id="txtPrecio" placeholder="Precio">
+              <i class="form__validation-icon fas fa-times-circle"></i>
+            </div>
+            <p class="form__input-error">Se debe ingresar una precio valido. Solo numeros (min 5 digitos)</p>
+          </div>
+          <!-- #endregion -->
+
+          <!-- #region PUERTAS, KILOMETROS, POTENCIA -->
+          <div id="form__group-container">
+            <div>
+              <div class="form__group-input">
+                <i id="input-icon" class="fa-sharp fa-solid fa-door-open"></i>
+                <input class="form__input form__input-little" type="text" name="puertas" id="txtPuertas"
+                  placeholder="Puertas">
+                <i class="form__validation-icon fas fa-times-circle"></i>
+              </div>
+              <p class="form__input-error">Solo numeros validos (2 4 o 5)</p>
+            </div>
+
+            <div>
+              <div class="form__group-input">
+                <i id="input-icon" class="fa-solid fa-gauge-simple-high"></i>
+                <input class="form__input form__input-little" type="text" name="kilometros" id="txtKilometros"
+                  placeholder="Kilometros">
+                <i class="form__validation-icon fas fa-times-circle"></i>
+              </div>
+              <p class="form__input-error">Solo numeros validos (0 - 200000)</p>
+            </div>
+
+            <div>
+              <div class="form__group-input">
+                <i id="input-icon" class="fab fa-searchengin"></i>
+                <input class="form__input form__input-little" type="text" name="potencia" id="txtPotencia"
+                  placeholder="Potencia">
+                <i class="form__validation-icon fas fa-times-circle"></i>
+              </div>
+              <p class="form__input-error">Solo numeros validos (50 - 300)</p>
+            </div>
+          </div>
+          <!-- #endregion -->
+
+          <!-- #region BOTONES -->
+          <div id="form__group-buttons">
+            <input type="button" value="Agregar" id="btnAgregar">
+            <input type="button" class="ocultar" value="Guardar" id="btnGuardar">
+            <input type="button" class="ocultar" value="Eliminar" id="btnEliminar">
+            <input type="button" value="Cancelar" id="btnCancelar">
+          </div>
+          <!-- #endregion -->
+        </form>
+      </fieldset>
+      <div id="divTabla">
+
+      </div>
+
+      <div id="background">
+
+      </div>
+      <div class="spinner">
+        <img src="./img/ruedaSpinner.png" alt="">
+      </div>
+      <div class="fondoSpinner"></div>
+
+    </section>
+  </main>
+  <footer>
+    <div id="div_footer">
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Anuncios</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <p>Todos los derechos reservados &copy;</p>
+  </footer>
+  <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>

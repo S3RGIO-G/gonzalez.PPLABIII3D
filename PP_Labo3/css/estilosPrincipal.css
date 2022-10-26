@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    height: 150px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+a>img {
+    width: 300px;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    margin-right: 100px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    width: 350px;
+}
+
+li {
+    font-size: 18px;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#backgroundPrincipal {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://fondosmil.com/fondo/21960.jpg');
+    background-size: cover;
+}
+
+#backgroundPrincipal p {
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    font-size: 40px;
+    color: #fff;
+}
+
+footer ul {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 300px;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #0075FF;
+}
+
+
+
+/*************************/
+
+.contenedorDivs {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.contenedorDivs h1 {
+    margin-top: 50px;
+}
+
+.divCard {
+    margin: 30px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: #E5E5E5;
+    padding: 30px;
+    grid-template-rows: repeat(6, max-content);
+    width: 900px;
+    transition: .4s;
+
+}
+
+.divCard:hover{
+    transition: .4s;
+    box-shadow: 0px 30px 40px #444;
+}
+
+.divCard h3 {
+    font-size: 30px;
+}
+
+.divIcons {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+}
+
+.divCard button {
+    height: 50px;
+    background-color: #0075FF;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.divCard button:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+
+}
+
+.divIcons div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    height: 30px;
+}
+
+.divIcons i {
+    font-size: 25px;
+}
